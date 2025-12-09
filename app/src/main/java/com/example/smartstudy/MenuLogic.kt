@@ -46,7 +46,7 @@ open class MenuLogic : AppCompatActivity(), NavigationView.OnNavigationItemSelec
             R.id.nav_item_seven -> { val intent = Intent(this, activity_permisos::class.java)
                 startActivity(intent)
             }
-            R.id.nav_item_eight -> { val intent = Intent(this, MainActivity::class.java)
+            R.id.nav_item_eight -> { val intent = Intent(this, ApiMoviesActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_item_nine -> { val intent = Intent(this, MainActivity::class.java)
