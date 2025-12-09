@@ -1,15 +1,60 @@
+# Archivos específicos de Android Studio
 *.iml
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea/
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# Archivos de Gradle
+.gradle/
+gradle-app.setting
+
+# Build de Android
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Archivos de Kotlin (si usas Kotlin en el futuro)
+*.kotlin_module
+
+# Java
+*.class
+
+# Archivos generados
+gen/
+out/
+
+# Archivos de log
+*.log
+
+# Archivos temporales
+*.tmp
+
+# Archivos de configuración específicos
+*.keystore
+
+# Archivos de sistema
+Thumbs.db
+
+# Configuración de entorno
+*.env
+.env.local
+
+# Archivos de Firebase (si usas Firebase)
+google-services.json
+GoogleService-Info.plist
+
+# Archivos de debug
+debug.keystore
+
+# Archivos de lint
+lint/
+
+# Archivos de NDK
+*.o
+*.so
