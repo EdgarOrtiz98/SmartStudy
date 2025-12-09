@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartStudy</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="title_activity_permisos">activity_permisos</string>
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaClase"
+    android:background="@color/gris">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/toolbar_gradient"/>
+
+    <TextView
+        android:id="@+id/textView222"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Nueva Clase"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/regresarClass"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/regresarClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="360dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:srcCompat="@drawable/fondo_formulario" />
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/asignaturaClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Asignatura"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/aulaClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aula"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profesorClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Profesor de Clase"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/diaClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingStart="16dp"
+                    android:hint="Día de la Clase"
+                    android:textColor="@color/blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Agrega este ImageView dentro del TextInputLayout de horaInicioClase -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/horaInicioClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextHoraInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hora de Inicio"
+                    android:inputType="time"
+                    android:textColor="@color/blue" />
+
+                <ImageView
+                    android:id="@+id/iconHoraI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:layout_marginTop="-50dp"
+                    android:src="@drawable/baseline_access_time_24" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/horaFinClase"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:boxBackgroundColor="#88DCE4E8"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/azul"
+                app:hintTextColor="@color/blue"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextHoraFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hora de Fin"
+                    android:inputType="time"
+                    android:textColor="@color/blue" />
+
+                <ImageView
+                    android:id="@+id/iconHoraF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:layout_marginTop="-50dp"
+                    android:src="@drawable/baseline_access_time_24" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/alertaClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnCrearClase"
+                android:layout_width="225dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="65dp"
+                android:backgroundTint="#8C0A00FF"
+                android:text="Guardar Clase"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:strokeColor="#002196F3"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

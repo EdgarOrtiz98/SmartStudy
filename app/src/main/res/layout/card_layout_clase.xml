@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#00A9FF">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Materia"
+            android:textColor="@color/white"
+            android:id="@+id/item_Materia"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/item_horaInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hora inicio"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/item_Materia"/>
+
+        <TextView
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/item_horaInicio"
+            android:layout_below="@+id/item_Materia"/>
+
+        <TextView
+            android:id="@+id/item_horaFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hora fin"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/menos"
+            android:layout_below="@+id/item_Materia"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aula"
+            android:textColor="@color/white"
+            android:id="@+id/item_Aula"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dia"
+            android:textColor="@color/white"
+            android:id="@+id/item_dia"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_Aula"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textColor="@color/white"
+            android:id="@+id/item_id_clase"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_dia"/>
+
+        <TextView
+            android:id="@+id/Aula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aula:   "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/item_Aula"
+            android:layout_alignParentTop="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
