@@ -34,12 +34,6 @@ open class MenuLogic : AppCompatActivity(), NavigationView.OnNavigationItemSelec
             R.id.nav_item_one -> { val intent = Intent(this, Perfil::class.java)
                 startActivity(intent)
             }
-            R.id.nav_item_two -> { val intent = Intent(this, Agenda::class.java)
-                startActivity(intent)
-            }
-            R.id.nav_item_three -> { val intent = Intent(this, Horario::class.java)
-                startActivity(intent)
-            }
             R.id.nav_item_four -> { val intent = Intent(this, Tareas::class.java)
                 startActivity(intent)
             }

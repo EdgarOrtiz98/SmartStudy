@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         val usuario = databaseHelper.leerUsuario(username, pass)
         if(usuario){
             Toast.makeText(this, "Iniciaste sesion", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Agenda::class.java)
+            val intent = Intent(this, Tareas::class.java)
             startActivity(intent)
             finish()
         }else{
