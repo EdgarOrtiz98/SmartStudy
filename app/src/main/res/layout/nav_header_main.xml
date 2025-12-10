@@ -17,14 +17,14 @@
         android:id="@+id/nav_header_imageView"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@mipmap/ic_logo"/>
+        android:src="@mipmap/ic_launcher_round"/>
 
     <TextView
         android:id="@+id/nav_header_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:text="SmartStudy"
+        android:text="PeliyTarea"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20dp"
         android:textStyle="bold" />

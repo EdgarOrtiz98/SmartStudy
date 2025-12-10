@@ -10,15 +10,6 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="322dp"
-        android:layout_height="182dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_1" />
-
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="300dp"
         android:layout_height="70dp"
@@ -35,7 +26,7 @@
         android:layout_width="286dp"
         android:layout_height="72dp"
         android:layout_marginTop="16dp"
-        android:text="SmartStudy"
+        android:text="PeliyTarea"
         android:textAlignment="center"
         android:textSize="35dp"
         android:textColor="@color/white"
@@ -45,14 +36,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="253dp"
-        android:layout_height="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_2" />
 
     <ScrollView
         android:id="@+id/scrollable"
@@ -97,7 +80,7 @@
                 app:layout_constraintHorizontal_bias="0.524"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView10"
-                app:srcCompat="@drawable/logo_smartstudy" />
+                app:srcCompat="@mipmap/ic_launcher_round" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nombreTarea"
