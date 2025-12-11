@@ -29,6 +29,25 @@
             app:iconifiedByDefault="false"
             app:queryHint="Buscar película..." />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No se encontraron resultados"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:textColor="#666666"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvMovies"
             android:layout_width="match_parent"

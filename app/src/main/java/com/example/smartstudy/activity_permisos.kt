@@ -50,21 +50,16 @@ class activity_permisos : MenuLogic() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
             != PackageManager.PERMISSION_GRANTED) {
 
-            // Si no tenemos permiso, lo pedimos
-            // Explicación racional (opcional, si el usuario ya negó una vez)
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
                 mostrarAlertaRacional()
             } else {
-                // Pedir permiso directamente
                 solicitarPermiso()
             }
         } else {
-            // Ya tenemos permiso
             Toast.makeText(this, "Permiso ya concedido", Toast.LENGTH_SHORT).show()
             actualizarEstadoVisual()
         }
     }
-
     private fun solicitarPermiso() {
         ActivityCompat.requestPermissions(
             this,
